@@ -1,0 +1,35 @@
+extends base.pug 
+
+block scripts
+  include ../static/index.js 
+      
+block style 
+   style 
+      include ../static/style.css
+      include ../static/contact.css 
+
+
+block content
+    nav#navbar
+      ul
+        div#logo
+          img(src="/static/img/log1.png")
+        li #[a(href = "/") Home]
+        li #[a(href = "/") About]
+        li #[a(href = "/") Services]
+        li #[a(href = "/") Class Info]
+        li #[a(href = "/") Contact Us]
+    section#contact 
+      h1 Contact Us 
+      form(action="/contact",method="post",class="form")
+        input(type="text",name="name",placeholder="Enter your name",class="myinput")
+        input(type="number",name="age",placeholder="Enter your age",class="myinput")
+        input(type="number",name="weight",placeholder="Enter your weight",class="myinput")
+        input(type="text",name="address",placeholder="Enter your address",class="myinput")
+        input(type="email",name="email",placeholder="Enter your email",class="myinput")
+        input(type="number",name="Contact",placeholder="Enter your Contact",class="myinput")
+        button(class = "btn")
+          | Submit  
+block footer 
+    footer#footer 
+      |  copyright 2021 tripathi_dance_academy.com | All right reserved        

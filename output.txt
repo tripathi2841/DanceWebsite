@@ -1,0 +1,5 @@
+The name of the clients is: Harshit Tripathi.
+ He/she is 66 years old."
+" It's weight is 77 kg."
+"The address of a client is undefined."
+",It's email and contact no. are harshittrip2002@gmail.com and 8840413019 respectively.

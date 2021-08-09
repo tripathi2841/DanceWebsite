@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+#navbar{
+    position: sticky;
+    top : 0px;
+   
+    padding: 4px 8px;
+    background-color: rgb(247, 55, 55);
+}
+#navbar ul{
+    display:flex;
+    align-items: center;
+}
+#logo img{
+    height:50px;
+}
+#navbar li a{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 19px 30px;
+    font-size: 1.5rem;
+}
+#navbar li a:hover{
+    color: black;
+}
+#navbar li{
+    list-style: none;
+}
+#IntroSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Work Sans', sans-serif;
+    
+    background: center / cover no-repeat url('/static/bg.jpg');
+    height: 300px;
+    background-color: red;
+} 
+
+#IntroSection div.small{
+    font-weight: bold;
+    font-size: 1.8rem;
+    font-family: 'Work Sans', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 10px;
+
+}
+.card{
+    border: 2px solid brown;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px 20px;
+    font-family: 'Work Sans', sans-serif;
+}
+.card-img{
+    display: flex;
+    justify-content: space-around;
+}
+.card-img img{
+    height: 50px;
+}
+.card-img p.small{
+    color: brown;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 5px;
+    font-family: 'Work Sans', sans-serif;
+}
+#MissionSection h2{
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+#sponsorSection{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    background-color: antiquewhite;
+} 
+#sponsorSection h2{
+    font-family: 'Work Sans', sans-serif;
+
+    
+    font-weight: bold;
+    font-size: 2rem;
+    
+} 
+.sponsor{
+    display: flex;
+    
+    align-items: center;
+    
+}
+.sponsor-img img{
+    padding: 20px 20px;
+    height: 90px;
+    width: 90px;
+   
+}
+
+#footer{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+    height: 50px;
+    background-color: black;
+}

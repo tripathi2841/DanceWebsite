@@ -1,0 +1,57 @@
+extends base.pug 
+
+block scripts
+  include ../static/index.js  
+      
+block style 
+   style 
+      include ../static/style.css
+
+block content
+    nav#navbar
+      ul
+        div#logo
+          img(src="/static/img/log1.png")
+        li #[a(href = "/") Home]
+        li #[a(href = "/") About]
+        li #[a(href = "/") Services]
+        li #[a(href = "/") Class Info]
+        li #[a(href = "/contact") Contact Us]
+    section#IntroSection 
+      div Welcome to My Dance Academy  
+      div.small Eat Sleep Dance Repeat 
+    section#MissionSection 
+      h2 Our Mission 
+      div.container 
+        div.card 
+          p Dance Perfection 
+          div.card-img 
+            img(src="/static/img/log2.png")
+            p.small This is the best dance academy of the universe.
+        div.card 
+          p Dance the Way you like
+          div.card-img 
+            img(src="/static/img/log3.png")
+            p.small This is the best dance academy of the universe.
+        div.card 
+          p Expert Teaching
+          div.card-img 
+            img(src="/static/img/log4.png")
+            p.small This is the best dance academy of the universe.        
+
+    section#sponsorSection 
+      h2 Our Sponsors
+      div.sponsor 
+        div.sponsor-img 
+          img(src="/static/img/logo1.png")
+        div.sponsor-img 
+          img(src="/static/img/logo2.png")
+        div.sponsor-img 
+          img(src="/static/img/logo3.png")
+        div.sponsor-img 
+          img(src="/static/img/logo4.jpg")
+        div.sponsor-img 
+          img(src="/static/img/logo5.jpg") 
+block footer 
+    footer#footer 
+      |  copyright 2021 tripathi_dance_academy.com | All right reserved                     
